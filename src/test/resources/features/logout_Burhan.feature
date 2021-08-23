@@ -1,6 +1,6 @@
 Feature: Logout Functionality
   As a user, I should be able to logout
-
+  @smoke
   Scenario Outline: Log out from user menu as "<userType>"
     Given The user is on the login page
     And The user logs in as "<userType>"

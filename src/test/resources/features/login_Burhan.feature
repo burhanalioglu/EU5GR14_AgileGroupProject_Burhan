@@ -13,7 +13,7 @@ Feature: Login functionality
       | expensesmanager  |
       | manufuser        |
 
-  @login
+  @login @smoke
   Scenario Outline: Login attempt with "<username>" username and "<password>" password
     Given The user is on the login page
     When The user enters "<username>" username and "<password>" password
@@ -26,7 +26,7 @@ Feature: Login functionality
       | invalid  | valid    |
       | invalid  | invalid  |
 
-  @login
+  @login @smoke
   Scenario Outline: Login attempt with "<username>" username and "<password>" password
     Given The user is on the login page
     When The user enters "<username>" username and "<password>" password
