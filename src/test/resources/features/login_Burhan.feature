@@ -1,6 +1,6 @@
 Feature: Login functionality
 
-  @login
+  @login @smoke
   Scenario Outline: Login with valid credentials as "<userType>"
     Given The user is on the login page
     When The user logs in as "<userType>"
